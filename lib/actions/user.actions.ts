@@ -83,9 +83,10 @@ export const verifySecret = async ({
     (await cookies()).set("appwrite-session", session.secret, {
       path: "/",
       httpOnly: true,
-      sameSite: "strict",
-      secure: true,
+      sameSite: "none",
+      secure: process.env.NODE_ENV === "production", // Only secure in production
     });
+
 
     return parseStringify({ sessionId: session.$id });
   } catch (error) {
