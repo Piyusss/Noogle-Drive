@@ -1,3 +1,4 @@
+
 "use server";
 
 import { createAdminClient, createSessionClient } from "@/lib/appwrite";
@@ -13,7 +14,7 @@ const getUserByEmail = async (email: string) => {
 
   const result = await databases.listDocuments(
     appwriteConfig.databaseId,
-    appwriteConfig.usersCollectionId, 
+    appwriteConfig.usersCollectionId,
     [Query.equal("email", [email])],
   );
 
@@ -83,10 +84,9 @@ export const verifySecret = async ({
     (await cookies()).set("appwrite-session", session.secret, {
       path: "/",
       httpOnly: true,
-      sameSite: "none",
-      secure: process.env.NODE_ENV === "production", // Only secure in production
+      sameSite: "strict",
+      secure: true,
     });
-
 
     return parseStringify({ sessionId: session.$id });
   } catch (error) {
