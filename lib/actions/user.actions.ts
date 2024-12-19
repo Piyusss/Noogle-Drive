@@ -1,4 +1,3 @@
-
 "use server";
 
 import { createAdminClient, createSessionClient } from "@/lib/appwrite";
