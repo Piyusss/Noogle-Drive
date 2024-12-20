@@ -39,8 +39,13 @@ $ cd Noogle-Drive
 Create a `.env.local` file in the root directory and add the following:
 
 ```env
-NEXT_PUBLIC_APPWRITE_ENDPOINT=<Your Appwrite Endpoint>
-NEXT_PUBLIC_APPWRITE_PROJECT=<Your Appwrite Project ID>
+NEXT_PUBLIC_APPWRITE_ENDPOINT=""
+NEXT_PUBLIC_APPWRITE_PROJECT=""
+NEXT_PUBLIC_APPWRITE_DATABASE=""
+NEXT_PUBLIC_APPWRITE_USERS_COLLECTION=""
+NEXT_PUBLIC_APPWRITE_FILES_COLLECTION=""
+NEXT_PUBLIC_APPWRITE_BUCKET=""
+NEXT_APPWRITE_KEY=""
 ```
 
 Replace `<Your Appwrite Endpoint>` and `<Your Appwrite Project ID>` with your Appwrite credentials.
