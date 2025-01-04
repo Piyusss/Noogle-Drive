@@ -17,72 +17,6 @@
 - **CSS**: Tailwind CSS for responsive and modern styling.
 - **Environment Management**: dotenv for handling environment variables.
 
-## 🎯 How to Use
-
-### Prerequisites
-
-Ensure you have the following installed:
-- Node.js (v16 or higher)
-- npm or yarn
-- Appwrite instance (cloud or self-hosted)
-
-### Clone the Repository
-
-```bash
-https://github.com/Piyusss/Noogle-Drive.git
-```
-
-### Setup Environment Variables
-
-Create a `.env.local` file in the root directory and add the following:
-
-```env
-NEXT_PUBLIC_APPWRITE_ENDPOINT=""
-NEXT_PUBLIC_APPWRITE_PROJECT=""
-NEXT_PUBLIC_APPWRITE_DATABASE=""
-NEXT_PUBLIC_APPWRITE_USERS_COLLECTION=""
-NEXT_PUBLIC_APPWRITE_FILES_COLLECTION=""
-NEXT_PUBLIC_APPWRITE_BUCKET=""
-NEXT_APPWRITE_KEY=""
-```
-
-### Install Dependencies
-
-Install the required packages using npm or yarn:
-
-```bash
-$ npm install
-```
-
-or
-
-```bash
-$ yarn install
-```
-
-### Run the Application Locally
-
-Start the development server:
-
-```bash
-$ npm run dev
-```
-
-or
-
-```bash
-$ yarn dev
-```
-
-Visit `http://localhost:3000` in your browser to explore the application.
-
-### Deploy to Vercel
-
-1. Push your project to GitHub.
-2. Link the repository to your Vercel account.
-3. Add environment variables in Vercel's project settings.
-4. Deploy your application with a single click.
-
 ## 🌐 Live Demo
 
 <p>Check out the live version of Noogle-Drive: <a href="https://noogle-drive.vercel.app/" target="_blank" rel="noopener noreferrer">Click here</a> </p>
@@ -95,16 +29,6 @@ Visit `http://localhost:3000` in your browser to explore the application.
 
 ### Secure Login
 ![Screenshot 2024-12-19 220151](https://github.com/user-attachments/assets/8b741294-fa58-48c5-a24d-e069485854fc)
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch-name`).
-3. Make your changes and commit them (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch-name`).
-5. Open a Pull Request.
 
 ## 📬 Contact
 
